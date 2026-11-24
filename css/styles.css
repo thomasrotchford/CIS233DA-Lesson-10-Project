@@ -3,17 +3,25 @@ body {
     color: darkgreen;
     font-family: "Comic Sans MS", bold;
     margin: 0;
+    margin-left: 220px;
 }
 
 
+.site-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: yellow;
+    border-right: 3px solid darkgreen;
+}
+
 nav {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
-    background-color: yellow;
     padding: 20px;
-    border-bottom: 3px solid darkgreen;
 }
 
 nav a {
@@ -27,9 +35,10 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+
 header {
-    text-align: center;
     background-color: yellow;
+    text-align: left;
     margin: 20px;
     padding: 30px;
     border: 3px solid darkgreen;
@@ -57,12 +66,11 @@ header p {
     font-style: italic;
 }
 
+
 main {
     display: grid;
     gap: 20px;
-    max-width: 900px;
-    margin: auto;
-    padding: 30px;
+    margin: 20px;
 }
 
 main section {
@@ -105,9 +113,10 @@ a:hover {
 
 footer {
     background-color: yellow;
-    text-align: center;
+    text-align: left;
+    margin: 20px;
     padding: 20px;
-    border-top: 3px solid darkgreen;
+    border: 3px solid darkgreen;
     font-family: Arial, sans-serif;
     font-size: 14px;
 }
